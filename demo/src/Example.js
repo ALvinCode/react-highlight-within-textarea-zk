@@ -4,8 +4,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { HighlightWithinTextarea } from "../../src";
 import Code from "./Code";
+import CodeSandbox from "./CodeSandbox";
 
-const Example = ({ title, text, initialValue, highlight, code }) => {
+const Example = ({ title, text, initialValue, highlight, code, codeSandbox }) => {
   const [value, setValue] = useState(initialValue);
   code = code || "undefined";
   let style = {
@@ -29,6 +30,7 @@ const Example = ({ title, text, initialValue, highlight, code }) => {
           />
         </div>
         <Code code={code} />
+        <CodeSandbox codeSandbox={codeSandbox} />
       </Col>
     </Row>
   );

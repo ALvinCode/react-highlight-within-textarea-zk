@@ -6,7 +6,14 @@ import { HighlightWithinTextarea } from "../../src";
 import Code from "./Code";
 import CodeSandbox from "./CodeSandbox";
 
-const Example = ({ title, text, initialValue, highlight, code, codeSandbox }) => {
+const Example = ({
+  title,
+  text,
+  initialValue,
+  highlight,
+  code,
+  codeSandbox,
+}) => {
   const [value, setValue] = useState(initialValue);
   code = code || "undefined";
   let style = {
@@ -29,8 +36,13 @@ const Example = ({ title, text, initialValue, highlight, code, codeSandbox }) =>
             style={{ width: "100%" }}
           />
         </div>
-        <Code code={code} />
-        <CodeSandbox codeSandbox={codeSandbox} />
+        <div style={{ position: "relative" }}>
+          <Code code={code} />
+          <CodeSandbox
+            style={{ position: "absolute", bottom: 8, right: 8 }}
+            codeSandbox={codeSandbox}
+          />
+        </div>
       </Col>
     </Row>
   );

@@ -21,7 +21,10 @@ const code = `const getSmileyDayString = (contentBlock, callback, contentStat) =
 
 const StrategyDemo(props) {
   ...
-  return <HighlightWithinTextarea highlight={getSmileyDayString} .../>;
+  return <HighlightWithinTextarea
+    highlight={getSmileyDayString}
+    ...
+  />;
 }`;
 
 const getSmileyDayString = (contentBlock, callback, contentStat) => {

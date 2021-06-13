@@ -17,7 +17,8 @@
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
-    "test:watch": "nwb test-react --server"
+    "test:watch": "nwb test-react --server",
+    "publish-pages": "yarn build && gh-pages --dist=demo/dist --repo=git@github.com:bonafideduck/rhwta-preview.git"
   },
   "peerDependencies": {
     "draft-js": "^0.11.7",
@@ -32,6 +33,7 @@
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "gh-pages": "^3.2.0",
     "nwb": "0.25.x",
     "prop-types": "^15.7.2",
     "react": "*",

@@ -55,6 +55,7 @@ const HighlightWithinTextareaFunc = forwardRef((props, fwdRef) => {
           key: 'foo',
           type: 'unstyled',
           entityRanges: [],
+          data:{'font-family':'GT Walsheim Pro,Arial'}
         },
       ],
     }));

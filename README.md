@@ -8,10 +8,10 @@
 ## Install
 
 ```bash
-npm install --save react-highlight-within-textarea
+npm install --save react-highlight-within-textarea-zk
 ```
 ```
-yarn add react-highlight-within-textarea
+yarn add react-highlight-within-textarea-zk
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ yarn add react-highlight-within-textarea
 ```jsx
 import React from 'react';
 import { useState } from 'react';
-import { HighlightWithinTextarea } from 'react-highlight-within-textarea'
+import { HighlightWithinTextarea } from 'react-highlight-within-textarea-zk'
 
 const Example = () => {
   const [value, setValue] = useState("X Y Z and then XYZ");
